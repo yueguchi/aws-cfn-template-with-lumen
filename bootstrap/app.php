@@ -80,6 +80,9 @@ $app->singleton(
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
+// tinkerはthird partyで導入
+// https://github.com/vluzrmos/lumen-tinker
+$app->register(Vluzrmos\Tinker\TinkerServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
