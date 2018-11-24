@@ -59,13 +59,13 @@ $app->singleton(
 |
 */
 
-// $app->middleware([
+ $app->middleware([
 //    App\Http\Middleware\ExampleMiddleware::class
-// ]);
+ ]);
 
-// $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+ $app->routeMiddleware([
+     'cognito' => App\Http\Middleware\CognitoMiddleware::class
+ ]);
 
 /*
 |--------------------------------------------------------------------------

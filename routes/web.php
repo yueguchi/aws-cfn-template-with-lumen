@@ -12,5 +12,10 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return 'healthy';
+});
+$router->group(['prefix' => 'api', 'middleware' => 'cognito'], function () use ($router) {
+    $router->group(['prefix' => 'v1'], function () use ($router) {
+        $router->get('users', ['uses' => 'UserController@index']);
+    });
 });
