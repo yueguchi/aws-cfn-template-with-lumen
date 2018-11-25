@@ -2981,7 +2981,7 @@
                                 "command": "yum -y update"
                             },
                             "2": {
-                                "command": "yum -y install httpd24 mysql php72 php72-mbstring php72-pdo php72-mysqlnd git"
+                                "command": "yum -y install httpd24 mysql56 php72 php72-mbstring php72-pdo php72-mysqlnd git"
                             },
                             "3": {
                                 "env": {
@@ -3011,6 +3011,10 @@
                             },
                             "8": {
                                 "command": "/usr/sbin/apachectl restart"
+                            },
+                            "9": {
+                                "cwd": "/var/www/html/aws-cfn-template-with-lumen",
+                                "command": "cp .env.example .env"
                             }
                         },
                         "files": {
