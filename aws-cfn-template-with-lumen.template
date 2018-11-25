@@ -2981,7 +2981,7 @@
                                 "command": "yum -y update"
                             },
                             "2": {
-                                "command": "yum -y install httpd24 mysql php72 php72-mbstring php72-pdo git"
+                                "command": "yum -y install httpd24 mysql php72 php72-mbstring php72-pdo php72-mysqlnd git"
                             },
                             "3": {
                                 "env": {
