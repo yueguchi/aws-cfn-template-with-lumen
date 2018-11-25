@@ -16,6 +16,7 @@ $router->get('/', function () use ($router) {
 });
 $router->group(['prefix' => 'api', 'middleware' => 'cognito'], function () use ($router) {
     $router->group(['prefix' => 'v1'], function () use ($router) {
+        $router->put('users', ['uses' => 'UserController@store']);
         $router->get('users', ['uses' => 'UserController@index']);
     });
 });
