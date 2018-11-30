@@ -37,7 +37,6 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-      \Log::info(get_class_methods($e));
       $status = $e->getStatusCode();
       $message = $e->getMessage() ?: 'Error';
       switch ($status) {
