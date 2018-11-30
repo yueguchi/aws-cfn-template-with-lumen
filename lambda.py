@@ -1,6 +1,5 @@
 import json
-import urllib.parse
-import urllib.request
+import urllib
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -14,10 +13,14 @@ def lambda_handler (event, context):
     url += '?' + urllib.parse.urlencode(event['queryStringParameters']) if event['queryStringParameters'] is not None else ''
     data = urllib.parse.urlencode(json.loads(event['body'])).encode("utf-8") if event['body'] is not None else None
     req = urllib.request.Request(url, data=data, headers=event['headers'],  method=event['httpMethod'])
-    with urllib.request.urlopen(req) as res:
-        body = res.read().decode("utf-8")
-        httpStatusCode = res.getcode()
-    result = {"message": body}
+    try:
+        with urllib.request.urlopen(req) as res:
+            body = res.read().decode("utf-8")
+            httpStatusCode = res.getcode()
+        result = {"message": body}
+    except urllib.error.URLError as err:
+        httpStatusCode = err.code
+        result = {"message": err.reason}
     return {
         "isBase64Encoded": False,
         "statusCode": httpStatusCode,
