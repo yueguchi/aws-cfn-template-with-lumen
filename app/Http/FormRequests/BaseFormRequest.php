@@ -45,7 +45,7 @@ class BaseFormRequest extends FormRequest
   {
     return array_replace_recursive(
       parent::all(),
-      $this->route()->parameters()
+      $this->route()
     );
   }
 }

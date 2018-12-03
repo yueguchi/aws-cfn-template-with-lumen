@@ -21,8 +21,8 @@ class UserStoreRequest extends BaseFormRequest
   public function rules()
   {
     return [
-      'sub' => 'required|exists:users',
-      'email' => 'required|exists:users'
+      'sub' => 'required|unique:users',
+      'email' => 'required|unique:users'
     ];
   }
 }
