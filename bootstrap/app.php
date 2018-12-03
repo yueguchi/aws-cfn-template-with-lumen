@@ -83,6 +83,7 @@ $app->singleton(
 // tinkerはthird partyで導入
 // https://github.com/vluzrmos/lumen-tinker
 $app->register(Vluzrmos\Tinker\TinkerServiceProvider::class);
+$app->register(Urameshibr\Providers\FormRequestServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

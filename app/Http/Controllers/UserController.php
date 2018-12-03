@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\FormRequests\UserStoreRequest;
 use App\Services\User\UserService;
 use Illuminate\Http\Request;
 
@@ -27,10 +28,10 @@ class UserController extends Controller
   
   /**
    * [PUT] Store New User from Cognito
-   * @param Request $request
+   * @param UserStoreRequest $request
    * @return \Illuminate\Http\Response|\Laravel\Lumen\Http\ResponseFactory
    */
-  public function store(Request $request)
+  public function store(UserStoreRequest $request)
   {
     $this->userService->insert($request->only(['sub', 'email']));
     return response(['message' => 'Created'], 201);
