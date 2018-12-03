@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Repositories\UserRepository;
+use App\Services\User\UserService;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
   
-  private $userRepository;
+  private $userService;
   
-  public function __construct(UserRepository $userRepository)
+  public function __construct(UserService $userService)
   {
-    $this->userRepository = $userRepository;
+    $this->userService = $userService;
   }
   
   /**
@@ -22,7 +22,7 @@ class UserController extends Controller
    */
   public function index(Request $request)
   {
-    return ["name" => "aaaa"];
+    return $this->userService->get();
   }
   
   /**
@@ -32,9 +32,7 @@ class UserController extends Controller
    */
   public function store(Request $request)
   {
-    $sub = $request->input('sub');
-    $email = $request->input('email');
-    $this->userRepository->insertUser($sub, $email);
+    $this->userService->insert($request->only(['sub', 'email']));
     return response(['message' => 'Created'], 201);
   }
 }
