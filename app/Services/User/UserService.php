@@ -20,7 +20,7 @@ class UserService
     $this->userRepository = $userRepository;
   }
   
-  public function get(array $conditions)
+  public function get(array $conditions = [])
   {
     return $this->userRepository->get($conditions);
   }
