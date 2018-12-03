@@ -9,6 +9,7 @@
 namespace App\Http\FormRequests;
 
 
+use Illuminate\Contracts\Validation\Validator;
 use Urameshibr\Requests\FormRequest;
 
 class BaseFormRequest extends FormRequest
