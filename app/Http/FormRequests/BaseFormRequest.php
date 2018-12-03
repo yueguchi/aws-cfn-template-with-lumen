@@ -41,7 +41,7 @@ class BaseFormRequest extends FormRequest
    * @param array|null $keys
    * @return array
    */
-  public function all(array $keys = null)
+  public function all($keys = null)
   {
     return array_replace_recursive(
       parent::all(),
