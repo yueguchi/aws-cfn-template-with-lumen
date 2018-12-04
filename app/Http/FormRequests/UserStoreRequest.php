@@ -9,20 +9,23 @@
 namespace App\Http\FormRequests;
 
 
-use Urameshibr\Requests\FormRequest;
-
+/**
+ * Class UserStoreRequest
+ *
+ * @package App\Http\FormRequests
+ */
 class UserStoreRequest extends BaseFormRequest
 {
-  /**
-   * Get the validation rules that apply to the request.
-   *
-   * @return array
-   */
-  public function rules()
-  {
-    return [
-      'sub' => 'required|unique:users',
-      'email' => 'required|unique:users'
-    ];
-  }
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+          'sub' => 'required|unique:users',
+          'email' => 'required|unique:users'
+        ];
+    }
 }

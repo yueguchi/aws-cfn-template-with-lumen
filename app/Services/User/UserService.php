@@ -12,20 +12,21 @@ use App\Repositories\User\UserRepository;
 
 class UserService
 {
-  
-  private $userRepository;
-  
-  public function __construct(UserRepository $userRepository)
-  {
-    $this->userRepository = $userRepository;
-  }
-  
-  public function get(array $conditions = [])
-  {
-    return $this->userRepository->get($conditions);
-  }
-  
-  public function insert(array $fillables) {
-    return $this->userRepository->insert($fillables);
-  }
+    
+    private $userRepository;
+    
+    public function __construct(UserRepository $userRepository)
+    {
+        $this->userRepository = $userRepository;
+    }
+    
+    public function get(array $conditions = [])
+    {
+        return $this->userRepository->get($conditions);
+    }
+    
+    public function insert(array $fillables)
+    {
+        return $this->userRepository->insert($fillables);
+    }
 }
