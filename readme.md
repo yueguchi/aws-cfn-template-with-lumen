@@ -24,12 +24,27 @@ $ composer create-project laravel/lumen aws-cfn-template-with-lumen "5.7.*"
 
 ## CloudFormation環境構築
 
+```
 aws-cfn-template-with-lumen.templateをCFNに流し込むだけです。
 起動時パラメータに指定したENVによって、「.env.[ENV]」が.envに昇格します。
+```
 
 ## 環境構築
 
-* コーディング規約PSR2設定
+### Editor
+
+- PHPStorm
+- PHP7.2
+
+### ショートカット
+
+- Cmd + Option + l
+    - 自動フォーマット
+- Ctl + Option + o
+    - import最適化
+
+
+### コーディング規約PSR2設定
 
 ```
 1. #composer global require "squizlabs/php_codesniffer=*"
@@ -38,7 +53,7 @@ aws-cfn-template-with-lumen.templateをCFNに流し込むだけです。
 4. PHPStormのpreferrenceのEditor->InspectionsのQualityTools->OHO Code Sniffer validationsのCodeStandardをCustomにし、PJルートのphpcs.xmlを設定する
 ```
 
-* バグチェッカー実行
+### バグチェッカー実行
 
 ```
 #vendor/bin/phpmd . text phpmd.xml --suffixes php --exclude resources,storage,vendor
