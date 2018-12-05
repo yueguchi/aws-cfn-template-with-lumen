@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\FormRequests\UserListRequest;
 use App\Http\FormRequests\UserStoreRequest;
 use App\Services\User\UserService;
 use Illuminate\Http\Request;
@@ -29,12 +30,12 @@ class UserController extends Controller
     /**
      * [GET] Users List
      *
-     * @param  Request $request リクエスト
+     * @param UserListRequest $request リクエスト
      * @return mixed Array
      */
-    public function index(Request $request)
+    public function index(UserListRequest $request)
     {
-        return $this->userService->get($request->only(['sub']));
+        return $this->userService->get($request->only(['sub', 'page', 'limit']));
     }
     
     /**

@@ -23,7 +23,7 @@ class UserRepository
      * @param  array $conditions 検索条件
      * @return array
      */
-    public function get(array $conditions = ['offset' => 0, 'limit' => 20])
+    public function get(array $conditions)
     {
         $users = User::where('sub', '!=', $conditions['sub'])->offset($conditions['offset'])->limit($conditions['limit']);
         return [
