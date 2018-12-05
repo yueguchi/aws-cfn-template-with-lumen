@@ -5,7 +5,7 @@ CloudFormation Template付きのLumen テストAPIプロジェクト
 ## 概要
 
 - 認証
-    - Cognito -> APIGateway -> Lambdaからproxyされ、認証済みのAuthorizationヘッダにてAPIが呼ばれる
+    - Cognito -> APIGateway http proxy -> 認証済みのAuthorizationヘッダにてAPIが呼ばれる
 
 - サーバ構成
     - ALB -> web AutoScaling multiAZ

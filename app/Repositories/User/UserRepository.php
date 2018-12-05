@@ -23,9 +23,14 @@ class UserRepository
      * @param  array $conditions 検索条件
      * @return array
      */
-    public function get(array $conditions)
+    public function get(array $conditions = ['offset' => 0, 'limit' => 20])
     {
-        return User::all()->toArray();
+        $users = User::where('sub', '!=', $conditions['sub'])->offset($conditions['offset'])->limit($conditions['limit']);
+        return [
+            'results' => $users->get()->toArray(),
+            'count' => $users->count(),
+            'total' => User::where('sub', '!=', $conditions['sub'])->count()
+        ];
     }
     
     /**

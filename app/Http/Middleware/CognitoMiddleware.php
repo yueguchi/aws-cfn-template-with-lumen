@@ -32,7 +32,8 @@ class CognitoMiddleware
         if (count($tokenArray) !== 3) {
             abort(401, 'invalid access');
         }
-        $sub = json_decode(base64_decode($tokenArray[1]), true)["sub"];
+        $decodedPayload = base64_decode($tokenArray[1]);
+        $sub = json_decode($decodedPayload, true)["sub"];
         if (!$sub) {
             abort(401, 'invalid access');
         }

@@ -34,7 +34,7 @@ class UserController extends Controller
      */
     public function index(Request $request)
     {
-        return $this->userService->get();
+        return $this->userService->get($request->only(['sub']));
     }
     
     /**
