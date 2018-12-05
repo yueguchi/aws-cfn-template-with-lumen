@@ -63,7 +63,8 @@ $app->singleton(
  ]);
 
  $app->routeMiddleware([
-     'cognito' => App\Http\Middleware\CognitoMiddleware::class
+     'cognito' => App\Http\Middleware\CognitoMiddleware::class,
+     'cors' => App\Http\Middleware\CorsMiddleware::class,
  ]);
 
 /*

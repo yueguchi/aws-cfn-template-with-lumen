@@ -14,7 +14,7 @@
 $router->get('/', function () use ($router) {
     return 'healthy';
 });
-$router->group(['prefix' => 'api', 'middleware' => 'cognito'], function () use ($router) {
+$router->group(['prefix' => 'api', 'middleware' => ['cognito', 'cors'], function () use ($router) {
     $router->group(['prefix' => 'v1'], function () use ($router) {
         $router->post('users', ['uses' => 'UserController@store']);
         $router->get('users', ['uses' => 'UserController@index']);
