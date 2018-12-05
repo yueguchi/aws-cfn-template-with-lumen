@@ -25,7 +25,7 @@ class UserRepository
      */
     public function get(array $conditions)
     {
-        $users = User::where('sub', '!=', $conditions['sub'])->offset($conditions['offset'])->limit($conditions['limit']);
+        $users = User::where('sub', '!=', $conditions['sub'])->offset($conditions['page'])->limit($conditions['limit']);
         return [
             'results' => $users->get()->toArray(),
             'count' => $users->count(),
