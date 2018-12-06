@@ -16,16 +16,16 @@ class AppServiceProvider extends ServiceProvider
         // TODO
         switch (env('APP_ENV')) {
             case 'local':
-                $this->app->bind('App\\Repositories\\User\\UserRepository', 'App\\Repositories\\User\\UserRepositoryImpl');
+                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 break;
             case 'stg':
-                $this->app->bind('App\\Repositories\\User\\UserRepository', 'App\\Repositories\\User\\UserRepositoryImpl');
+                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 break;
             case 'unit':
-                $this->app->bind('App\\Repositories\\User\\UserRepository', 'App\\Repositories\\User\\UserRepositoryImpl');
+                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 break;
             default:
-                $this->app->bind('App\\Repositories\\User\\UserRepository', 'App\\Repositories\\User\\UserRepositoryImpl');
+                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
         }
     }
 }
