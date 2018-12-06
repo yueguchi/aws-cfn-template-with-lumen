@@ -8,7 +8,6 @@
 
 namespace App\Http\FormRequests;
 
-
 /**
  * Class UserStoreRequest
  *
