@@ -14,12 +14,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // TODO
         switch (env('APP_ENV')) {
             case 'local':
+                $this->app->bind(\App\Repositories\User\UserRepository::class, \App\Repositories\User\UserRepositoryImpl::class);
                 break;
             case 'stg':
+                $this->app->bind(\App\Repositories\User\UserRepository::class, \App\Repositories\User\UserRepositoryImpl::class);
                 break;
             case 'unit':
+                $this->app->bind(\App\Repositories\User\UserRepository::class, \App\Repositories\User\UserRepositoryImpl::class);
                 break;
             default:
                 $this->app->bind(\App\Repositories\User\UserRepository::class, \App\Repositories\User\UserRepositoryImpl::class);
