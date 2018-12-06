@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use App\Repositories\User\UserRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -17,16 +16,16 @@ class AppServiceProvider extends ServiceProvider
         // TODO
         switch (env('APP_ENV')) {
             case 'local':
-                $this->app->bind(UserRepository::class, UserRepositoryImpl::class);
+                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 break;
             case 'stg':
-                $this->app->bind(UserRepository::class, UserRepositoryImpl::class);
+                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 break;
             case 'unit':
-                $this->app->bind(UserRepository::class, UserRepositoryImpl::class);
+                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 break;
             default:
-                $this->app->bind(UserRepository::class, UserRepositoryImpl::class);
+                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
         }
     }
 }
