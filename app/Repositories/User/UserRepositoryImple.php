@@ -11,7 +11,7 @@ namespace App\Repositories\User;
 use App\Models\User;
 
 /**
- * Class UserRepository
+ * Class UserRepositoryImpl
  *
  * @package App\Repositories\User
  */
@@ -41,9 +41,6 @@ class UserRepositoryImpl implements UserRepository
      */
     public function insert(array $fillables)
     {
-        return User::create([
-          'sub' => $fillables['sub'],
-          'email' => $fillables['email']
-        ]);
+        return User::create($fillables);
     }
 }
