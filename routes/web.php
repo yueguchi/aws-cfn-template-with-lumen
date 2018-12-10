@@ -16,7 +16,10 @@ $router->get('/', function () use ($router) {
 });
 $router->group(['prefix' => 'api', 'middleware' => ['cognito', 'cors']], function () use ($router) {
     $router->group(['prefix' => 'v1'], function () use ($router) {
+        // users
         $router->post('users', ['uses' => 'UserController@store']);
         $router->get('users', ['uses' => 'UserController@index']);
+        // infos
+        $router->get('infos', ['uses' => 'InfoController@index']);
     });
 });

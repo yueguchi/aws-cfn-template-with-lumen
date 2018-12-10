@@ -27,7 +27,6 @@ class InfoController extends Controller
     /**
      * [GET] Users List
      *
-     * @param UserListRequest $request リクエスト
      * @return mixed Array
      */
     public function index()
