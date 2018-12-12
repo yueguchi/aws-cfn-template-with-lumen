@@ -26,7 +26,7 @@ class AddFrkTimetableidToLikes extends Migration
     public function down()
     {
         Schema::table('likes', function (Blueprint $table) {
-            $table->dropForeign('timetable_id');
+//            $table->dropForeign('timetable_id');
         });
     }
 }
