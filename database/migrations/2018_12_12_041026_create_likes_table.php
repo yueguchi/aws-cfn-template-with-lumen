@@ -17,7 +17,9 @@ class CreateLikesTable extends Migration
             $table->increments('id');
             $table->integer('timetable_id')->unsigend()->comment('id@TimeTablesとの外部キー');
             $table->integer('count')->unsigend()->default(0)->comment('良いね');
-            $table->timestamps();
+            $table->timestampTz('created_at')->default(DB::raw('CURRENT_TIMESTAMP'))->comment('作成日付。デフォルトで現在日時が入る');
+            $table->timestampTz('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'))->comment('更新日付。デフォルトで現在日付が入る');
+            $table->timestampTz('deleted_at')->nullable()->comment('削除日付');
         });
     }
 

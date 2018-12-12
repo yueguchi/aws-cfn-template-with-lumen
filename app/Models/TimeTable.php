@@ -10,6 +10,7 @@ class TimeTable extends Model
     
     use SoftDeletes;
     
+    protected $table = 'timetables';
     protected $dates = ['deleted_at'];
 
     /**
