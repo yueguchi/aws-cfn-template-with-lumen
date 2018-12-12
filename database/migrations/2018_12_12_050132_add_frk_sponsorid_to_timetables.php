@@ -26,7 +26,7 @@ class AddFrkSponsoridToTimetables extends Migration
     public function down()
     {
         Schema::table('timetables', function (Blueprint $table) {
-            $table->dropForeign('sponsor_id');
+            // ignore
         });
     }
 }

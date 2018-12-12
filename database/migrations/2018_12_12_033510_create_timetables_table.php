@@ -38,6 +38,6 @@ class CreateTimetablesTable extends Migration
      */
     public function down()
     {
-//        Schema::dropIfExists('timetables');
+        Schema::dropIfExists('timetables');
     }
 }
