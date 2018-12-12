@@ -18,18 +18,22 @@ class AppServiceProvider extends ServiceProvider
             case 'local':
                 $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 $this->app->bind('App\Repositories\Info\InfoRepository', 'App\Repositories\Info\InfoRepositoryImpl');
+                $this->app->bind('App\Repositories\TimeTable\TimeTableRepository', 'App\Repositories\TimeTable\TimeTableRepositoryImpl');
                 break;
             case 'stg':
                 $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 $this->app->bind('App\Repositories\Info\InfoRepository', 'App\Repositories\Info\InfoRepositoryImpl');
+                $this->app->bind('App\Repositories\TimeTable\TimeTableRepository', 'App\Repositories\TimeTable\TimeTableRepositoryImpl');
                 break;
             case 'unit':
                 $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 $this->app->bind('App\Repositories\Info\InfoRepository', 'App\Repositories\Info\InfoRepositoryImpl');
+                $this->app->bind('App\Repositories\TimeTable\TimeTableRepository', 'App\Repositories\TimeTable\TimeTableRepositoryImpl');
                 break;
             default:
                 $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
                 $this->app->bind('App\Repositories\Info\InfoRepository', 'App\Repositories\Info\InfoRepositoryImpl');
+                $this->app->bind('App\Repositories\TimeTable\TimeTableRepository', 'App\Repositories\TimeTable\TimeTableRepositoryImpl');
         }
     }
 }
