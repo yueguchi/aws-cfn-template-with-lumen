@@ -23,7 +23,8 @@ class CorsMiddleware
     public function handle(Request $request, Closure $next)
     {
         $headers = [
-          'Access-Control-Allow-Origin' => 'http://localhost:8080',
+          // TODO 本当はIonicWebViewのhttp://localhost:8080のみを許可したいが、MonacaIDEでも動作するように、一旦*
+          'Access-Control-Allow-Origin' => '*',
           'Access-Control-Allow-Methods' => 'POST, GET, OPTIONS, PUT, DELETE',
           'Access-Control-Allow-Credentials' => 'true',
           'Access-Control-Max-Age' => '86400',
