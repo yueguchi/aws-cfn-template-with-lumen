@@ -16,7 +16,7 @@ class TimeTablesTableSeeder extends Seeder
         // gradeの値のみを抽出
         // TODO 採択されたら、精査して正確なデータを入れる
         $inserts = [];
-        array_map(function ($s) use ($inserts) {
+        array_map(function ($s) use (&$inserts) {
             switch ($s['grade']) {
                 case 'Gold':
                     array_push($inserts, [
