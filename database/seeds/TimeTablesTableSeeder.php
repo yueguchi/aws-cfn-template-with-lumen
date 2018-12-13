@@ -34,8 +34,8 @@ EOT
                       'twitter' => 'chiroruxxxx',
                       'place' => '3F',
                       'hash_tag' => '#larajpconf3F',
-                      'start_at' => '10:30',
-                      'end_at' => '11:00',
+                      'start_at' => '2019-02-16 10:30',
+                      'end_at' => '2019-02-16 11:00',
                       'sponsor_id' => $s['id']
                     ]);
                     array_push($inserts, [
@@ -50,8 +50,8 @@ EOT
                       'twitter' => 'k_kurikuri2',
                       'place' => '4F',
                       'hash_tag' => '#larajpconf4F',
-                      'start_at' => '11:00',
-                      'end_at' => '11:30',
+                      'start_at' => '2019-02-16 11:00',
+                      'end_at' => '2019-02-16 11:30',
                       'sponsor_id' => $s['id']
                     ]);
                     array_push($inserts, [
@@ -70,8 +70,8 @@ EOT
                       'twitter' => 'ex_takezawa',
                       'place' => '4F',
                       'hash_tag' => '#larajpconf4F',
-                      'start_at' => '11:30',
-                      'end_at' => '12:00',
+                      'start_at' => '2019-02-16 11:30',
+                      'end_at' => '2019-02-16 12:00',
                       'sponsor_id' => $s['id']
                     ]);
                     break;
@@ -101,8 +101,8 @@ EOT
                       'twitter' => 'ex_takezawa',
                       'place' => '3F',
                       'hash_tag' => '#larajpconf',
-                      'start_at' => '10:00',
-                      'end_at' => '10:15',
+                      'start_at' => '2019-02-16 10:00',
+                      'end_at' => '2019-02-16 10:15',
                       'sponsor_id' => $s['id']
                     ]);
                     array_push($inserts, [
@@ -117,8 +117,8 @@ EOT
                       'twitter' => 'test',
                       'place' => '3F',
                       'hash_tag' => '#larajpconf3F',
-                      'start_at' => '13:00',
-                      'end_at' => '13:05',
+                      'start_at' => '2019-02-16 13:00',
+                      'end_at' => '2019-02-16 13:05',
                       'sponsor_id' => $s['id']
                     ]);
                     break;
