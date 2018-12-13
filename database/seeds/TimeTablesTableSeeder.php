@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Sponsor;
+use Webpatser\Uuid\Uuid;
 use Illuminate\Database\Seeder;
 
 class TimeTablesTableSeeder extends Seeder
@@ -20,6 +21,7 @@ class TimeTablesTableSeeder extends Seeder
             switch ($s['grade']) {
                 case 'Gold':
                     array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
                       'title' => 'PHPerのためのXP入門',
                       'description' => <<< 'EOT'
 みなさん、アジャイルは好きですか？
@@ -39,6 +41,7 @@ EOT
                       'sponsor_id' => $s['id']
                     ]);
                     array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
                       'title' => 'Laravelerの僕が半年Goで開発した知見を公開する',
                       'description' => <<< 'EOT'
 Laravel使いだった私はGo言語を始めて1年、業務では半年開発をしています。
@@ -55,6 +58,7 @@ EOT
                       'sponsor_id' => $s['id']
                     ]);
                     array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
                       'title' => 'Moving from Laravel to Hack in Building microservices',
                       'description' => <<< 'EOT'
 Laravelを用いることで多種多様なアプリケーションチームが可能ですが、
@@ -91,6 +95,7 @@ EOT
                     break;
                 case 'Etc':
                     array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
                       'title' => 'オープニング',
                       'description' => <<< 'EOT'
 オープニングです。
@@ -106,6 +111,7 @@ EOT
                       'sponsor_id' => $s['id']
                     ]);
                     array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
                       'title' => 'test',
                       'description' => <<< 'EOT'
 て
