@@ -19,7 +19,11 @@ $router->group(['prefix' => 'api', 'middleware' => ['cognito', 'cors']], functio
         // users
         $router->post('users', ['uses' => 'UserController@store']);
         $router->get('users', ['uses' => 'UserController@index']);
+        
+        
+        // ここからConf情報
         // infos
         $router->get('infos', ['uses' => 'InfoController@index']);
+        $router->get('timetables', ['uses' => 'TimeTableController@index']);
     });
 });
