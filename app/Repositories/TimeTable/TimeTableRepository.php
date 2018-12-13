@@ -16,5 +16,5 @@ namespace App\Repositories\TimeTable;
  */
 interface TimeTableRepository
 {
-    public function get();
+    public function get(array $columns = []);
 }

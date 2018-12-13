@@ -20,10 +20,11 @@ class TimeTableRepositoryImpl implements TimeTableRepository
     /**
      * 取得
      *
+     * @param array $columns
      * @return array
      */
-    public function get()
+    public function get(array $columns = [])
     {
-        return TimeTable::all();
+        return TimeTable::orderBy('start_at')->get($columns);
     }
 }

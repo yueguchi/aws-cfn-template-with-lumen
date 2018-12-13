@@ -30,6 +30,17 @@ class TimeTableService
      */
     public function get()
     {
-        return $this->repository->get();
+        return $this->repository->get([
+          'uuid',
+          'speaker',
+          'title',
+          'description',
+          'twitter',
+          'place',
+          'hash_tag',
+          'start_at',
+          'end_at',
+          'sponsor_id'
+        ]);
     }
 }
