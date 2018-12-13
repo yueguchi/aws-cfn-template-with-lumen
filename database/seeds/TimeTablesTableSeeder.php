@@ -127,6 +127,23 @@ EOT
                       'end_at' => '2019-02-16 13:05',
                       'sponsor_id' => $s['id']
                     ]);
+                    array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
+                      'title' => 'test',
+                      'description' => <<< 'EOT'
+同じ時間帯のて
+す
+と
+EOT
+                        ,
+                      'speaker' => 'test',
+                      'twitter' => 'test',
+                      'place' => '3F',
+                      'hash_tag' => '#larajpconf3F',
+                      'start_at' => '2019-02-16 13:00',
+                      'end_at' => '2019-02-16 13:30',
+                      'sponsor_id' => $s['id']
+                    ]);
                     break;
             }
         }, Sponsor::get(['grade', 'id'])->toArray());
