@@ -8,7 +8,7 @@
 
 namespace App\Services\TimeTable;
 
-use App\Repositories\Info\TimeTableRepository;
+use App\Repositories\TimeTable\TimeTableRepository;
 
 class TimeTableService
 {
