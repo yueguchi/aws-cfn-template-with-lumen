@@ -35,7 +35,7 @@ EOT
                       'speaker' => '前田 和人',
                       'twitter' => 'chiroruxxxx',
                       'place' => '3F',
-                      'hash_tag' => '#larajpconf3F',
+                      'hash_tag' => 'larajpconf3F',
                       'start_at' => '2019-02-16 10:30',
                       'end_at' => '2019-02-16 11:00',
                       'sponsor_id' => $s['id']
@@ -52,7 +52,7 @@ EOT
                       'speaker' => 'k-kurikuri',
                       'twitter' => 'k_kurikuri2',
                       'place' => '4F',
-                      'hash_tag' => '#larajpconf4F',
+                      'hash_tag' => 'larajpconf4F',
                       'start_at' => '2019-02-16 11:00',
                       'end_at' => '2019-02-16 11:30',
                       'sponsor_id' => $s['id']
@@ -73,7 +73,7 @@ EOT
                       'speaker' => 'ytake',
                       'twitter' => 'ex_takezawa',
                       'place' => '4F',
-                      'hash_tag' => '#larajpconf4F',
+                      'hash_tag' => 'larajpconf4F',
                       'start_at' => '2019-02-16 11:30',
                       'end_at' => '2019-02-16 12:00',
                       'sponsor_id' => $s['id']
@@ -105,7 +105,7 @@ EOT
                       'speaker' => 'ytake',
                       'twitter' => 'ex_takezawa',
                       'place' => '3F',
-                      'hash_tag' => '#larajpconf',
+                      'hash_tag' => 'larajpconf',
                       'start_at' => '2019-02-16 10:00',
                       'end_at' => '2019-02-16 10:15',
                       'sponsor_id' => $s['id']
@@ -122,7 +122,7 @@ EOT
                       'speaker' => 'test',
                       'twitter' => 'test',
                       'place' => '3F',
-                      'hash_tag' => '#larajpconf3F',
+                      'hash_tag' => 'larajpconf3F',
                       'start_at' => '2019-02-16 13:00',
                       'end_at' => '2019-02-16 13:05',
                       'sponsor_id' => $s['id']
@@ -139,7 +139,7 @@ EOT
                       'speaker' => 'test',
                       'twitter' => 'test',
                       'place' => '3F',
-                      'hash_tag' => '#larajpconf3F',
+                      'hash_tag' => 'larajpconf3F',
                       'start_at' => '2019-02-16 13:00',
                       'end_at' => '2019-02-16 13:30',
                       'sponsor_id' => $s['id']
