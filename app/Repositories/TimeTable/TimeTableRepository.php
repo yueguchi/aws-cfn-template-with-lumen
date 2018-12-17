@@ -16,5 +16,5 @@ namespace App\Repositories\TimeTable;
  */
 interface TimeTableRepository
 {
-    public function get(array $columns = []);
+    public function findAll(array $columns = []);
 }

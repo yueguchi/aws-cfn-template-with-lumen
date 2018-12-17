@@ -25,5 +25,6 @@ $router->group(['prefix' => 'api', 'middleware' => ['cognito', 'cors']], functio
         // infos
         $router->get('infos', ['uses' => 'InfoController@index']);
         $router->get('timetables', ['uses' => 'TimeTableController@index']);
+        $router->get('master', ['uses' => 'MasterController@index']);
     });
 });

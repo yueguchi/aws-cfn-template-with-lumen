@@ -16,5 +16,5 @@ namespace App\Repositories\Info;
  */
 interface InfoRepository
 {
-    public function get();
+    public function find();
 }

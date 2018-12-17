@@ -16,7 +16,7 @@ namespace App\Repositories\User;
  */
 interface UserRepository
 {
-    public function get(array $conditions);
+    public function find(array $conditions);
     
     public function insert(array $fillables);
 }

@@ -22,7 +22,7 @@ class InfoRepositoryImpl implements InfoRepository
      *
      * @return array
      */
-    public function get()
+    public function find()
     {
         return Info::first();
     }

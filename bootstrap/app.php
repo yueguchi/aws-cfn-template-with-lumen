@@ -1,9 +1,9 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 try {
-    (new Dotenv\Dotenv(__DIR__.'/../'))->load();
+    (new Dotenv\Dotenv(__DIR__ . '/../'))->load();
 } catch (Dotenv\Exception\InvalidPathException $e) {
     //
 }
@@ -20,7 +20,7 @@ try {
 */
 
 $app = new Laravel\Lumen\Application(
-    realpath(__DIR__.'/../')
+  realpath(__DIR__ . '/../')
 );
 
 $app->withFacades();
@@ -38,13 +38,13 @@ $app->withEloquent();
 */
 
 $app->singleton(
-    Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Exceptions\Handler::class
+  Illuminate\Contracts\Debug\ExceptionHandler::class,
+  App\Exceptions\Handler::class
 );
 
 $app->singleton(
-    Illuminate\Contracts\Console\Kernel::class,
-    App\Console\Kernel::class
+  Illuminate\Contracts\Console\Kernel::class,
+  App\Console\Kernel::class
 );
 
 /*
@@ -58,14 +58,14 @@ $app->singleton(
 |
 */
 
- $app->middleware([
+$app->middleware([
 //    App\Http\Middleware\ExampleMiddleware::class
- ]);
+]);
 
- $app->routeMiddleware([
-     'cognito' => App\Http\Middleware\CognitoMiddleware::class,
-     'cors' => App\Http\Middleware\CorsMiddleware::class,
- ]);
+$app->routeMiddleware([
+  'cognito' => App\Http\Middleware\CognitoMiddleware::class,
+  'cors' => App\Http\Middleware\CorsMiddleware::class,
+]);
 
 /*
 |--------------------------------------------------------------------------
@@ -98,9 +98,9 @@ $app->register(Urameshibr\Providers\FormRequestServiceProvider::class);
 */
 
 $app->router->group([
-    'namespace' => 'App\Http\Controllers',
+  'namespace' => 'App\Http\Controllers',
 ], function ($router) {
-    require __DIR__.'/../routes/web.php';
+    require __DIR__ . '/../routes/web.php';
 });
 
 return $app;
