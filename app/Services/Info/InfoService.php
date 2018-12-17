@@ -30,6 +30,6 @@ class InfoService
      */
     public function get()
     {
-        return $this->repository->get();
+        return $this->repository->find();
     }
 }

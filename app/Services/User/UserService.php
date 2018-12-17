@@ -31,7 +31,7 @@ class UserService
      */
     public function get(array $conditions = [])
     {
-        return $this->repository->get($conditions);
+        return $this->repository->find($conditions);
     }
     
     /**

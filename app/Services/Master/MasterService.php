@@ -31,7 +31,7 @@ class MasterService
     public function get()
     {
         return [
-          'sponsors' => $this->sponsorRepository->get()
+          'sponsors' => $this->sponsorRepository->findAll()
         ];
     }
 }
