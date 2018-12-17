@@ -21,7 +21,7 @@ class InfosTableSeeder extends Seeder
           'address2' => '田町グランパーク プラザ棟3階・4階',
           'place' => 'グランパークカンファレンス',
           'organizer' => 'Laravel JP Confference実行委員会',
-          'hash_tag' => 'larajpconf',
+          'hash_tag' => 'laraveljpcon',
           'start_at' => Carbon::parse('2019-02-16 10:00'),
           'end_at' => Carbon::parse('2019-02-16 17:30')
         ]);
