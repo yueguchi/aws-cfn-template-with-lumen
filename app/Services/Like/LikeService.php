@@ -10,8 +10,8 @@ namespace App\Services\Like;
 
 class LikeService
 {
-    public function change(int $timetableId, int $count)
+    public function change(int $uuid, int $count)
     {
-        return [$timetableId, $count];
+        return [$uuid, $count];
     }
 }

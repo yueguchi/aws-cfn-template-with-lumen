@@ -21,6 +21,6 @@ class LikeRequest extends BaseFormRequest
      */
     public function rules()
     {
-        return ['timetable_id' => 'required|exists:timetables'];
+        return ['uuid' => 'required|exists:timetables,uuid'];
     }
 }
