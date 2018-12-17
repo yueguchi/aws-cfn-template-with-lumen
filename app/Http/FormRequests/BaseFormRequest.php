@@ -8,7 +8,6 @@
 
 namespace App\Http\FormRequests;
 
-
 use Illuminate\Contracts\Validation\Validator;
 use Urameshibr\Requests\FormRequest;
 
@@ -43,9 +42,6 @@ class BaseFormRequest extends FormRequest
      */
     public function all($keys = null)
     {
-        return array_replace_recursive(
-          parent::all(),
-          $this->route()
-        );
+        return array_replace_recursive(parent::all(), $this->route()[2]);
     }
 }
