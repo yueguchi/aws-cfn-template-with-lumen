@@ -22,8 +22,8 @@ class InfosTableSeeder extends Seeder
           'place' => 'グランパークカンファレンス',
           'organizer' => 'Laravel JP Confference実行委員会',
           'hash_tag' => 'laraveljpcon',
-          'start_at' => Carbon::parse('2019-02-16 00:00:00'),
-          'end_at' => Carbon::parse('2019-02-16 23:59:59')
+          'start_at' => Carbon::parse('2019-02-16 10:00'),
+          'end_at' => Carbon::parse('2019-02-16 17:30')
         ]);
     }
 }
