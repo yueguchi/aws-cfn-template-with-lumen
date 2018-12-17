@@ -21,10 +21,11 @@ $router->group(['prefix' => 'api', 'middleware' => ['cognito', 'cors']], functio
         $router->get('users', ['uses' => 'UserController@index']);
         
         
-        // ここからConf情報
-        // infos
+        // ここからLaraConf情報
         $router->get('infos', ['uses' => 'InfoController@index']);
         $router->get('timetables', ['uses' => 'TimeTableController@index']);
         $router->get('master', ['uses' => 'MasterController@index']);
+        $router->post('like/{timetable_id}/increment', ['uses' => 'LikeController@increment']);
+        $router->post('like/{timetable_id}/decrement', ['uses' => 'LikeController@decrement']);
     });
 });
