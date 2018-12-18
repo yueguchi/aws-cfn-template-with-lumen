@@ -2,7 +2,6 @@
 
 use App\Models\TimeTable;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class LikesTableSeeder extends Seeder
 {
