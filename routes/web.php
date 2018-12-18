@@ -25,7 +25,7 @@ $router->group(['prefix' => 'api', 'middleware' => ['cognito', 'cors']], functio
         $router->get('infos', ['uses' => 'InfoController@index']);
         $router->get('timetables', ['uses' => 'TimeTableController@index']);
         $router->get('master', ['uses' => 'MasterController@index']);
-        $router->patch('like/{uuid}/increment', ['uses' => 'LikeController@increment']);
-        $router->patch('like/{uuid}/decrement', ['uses' => 'LikeController@decrement']);
+        $router->patch('like/{uuid}/increments', ['uses' => 'LikeController@increment']);
+        $router->patch('like/{uuid}/decrements', ['uses' => 'LikeController@decrement']);
     });
 });
