@@ -15,7 +15,7 @@ use App\Models\Sponsor;
  *
  * @package App\Repositories\Sponsor
  */
-class SponsorRepositoryImpl implements SponsorRepository
+class SponsorRepositoryImple implements SponsorRepository
 {
     /**
      * 取得

@@ -15,7 +15,7 @@ use App\Models\Info;
  *
  * @package App\Repositories\User
  */
-class InfoRepositoryImpl implements InfoRepository
+class InfoRepositoryImple implements InfoRepository
 {
     /**
      * 取得

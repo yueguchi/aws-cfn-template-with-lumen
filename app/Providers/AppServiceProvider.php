@@ -17,11 +17,11 @@ class AppServiceProvider extends ServiceProvider
             case 'test':
                 // TODO
             default:
-                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImpl');
-                $this->app->bind('App\Repositories\Info\InfoRepository', 'App\Repositories\Info\InfoRepositoryImpl');
-                $this->app->bind('App\Repositories\TimeTable\TimeTableRepository', 'App\Repositories\TimeTable\TimeTableRepositoryImpl');
-                $this->app->bind('App\Repositories\Sponsor\SponsorRepository', 'App\Repositories\Sponsor\SponsorRepositoryImpl');
-                $this->app->bind('App\Repositories\Like\LikeRepository', 'App\Repositories\Like\LikeRepositoryImpl');
+                $this->app->bind('App\Repositories\User\UserRepository', 'App\Repositories\User\UserRepositoryImple');
+                $this->app->bind('App\Repositories\Info\InfoRepository', 'App\Repositories\Info\InfoRepositoryImple');
+                $this->app->bind('App\Repositories\TimeTable\TimeTableRepository', 'App\Repositories\TimeTable\TimeTableRepositoryImple');
+                $this->app->bind('App\Repositories\Sponsor\SponsorRepository', 'App\Repositories\Sponsor\SponsorRepositoryImple');
+                $this->app->bind('App\Repositories\Like\LikeRepository', 'App\Repositories\Like\LikeRepositoryImple');
         }
     }
 }

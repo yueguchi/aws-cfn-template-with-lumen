@@ -15,7 +15,7 @@ use App\Models\TimeTable;
  *
  * @package App\Repositories\User
  */
-class TimeTableRepositoryImpl implements TimeTableRepository
+class TimeTableRepositoryImple implements TimeTableRepository
 {
     /**
      * 取得

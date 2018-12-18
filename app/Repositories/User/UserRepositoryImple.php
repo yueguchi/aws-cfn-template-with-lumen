@@ -15,7 +15,7 @@ use App\Models\User;
  *
  * @package App\Repositories\User
  */
-class UserRepositoryImpl implements UserRepository
+class UserRepositoryImple implements UserRepository
 {
     /**
      * 取得
