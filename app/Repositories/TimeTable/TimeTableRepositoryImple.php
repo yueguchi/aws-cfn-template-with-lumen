@@ -36,6 +36,6 @@ class TimeTableRepositoryImple implements TimeTableRepository
      */
     public function findIdByUuid(string $uuid)
     {
-        return TimeTable::where('uuid', '=', $uuid)->get(['id'])['id'];
+        return TimeTable::where('uuid', '=', $uuid)->first(['id'])['id'];
     }
 }
