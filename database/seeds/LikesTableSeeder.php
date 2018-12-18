@@ -15,11 +15,10 @@ class LikesTableSeeder extends Seeder
     {
         DB::table('likes')->delete();
         array_map(function ($timeTable) {
-            $id = $timeTable['id'];
-            $like = new Like();
-            $like->timetable_id = $id;
-            $like->count = 0;
-            $like->save();
+            DB::table('likes')->insert([
+              'timetable_id' => $timeTable['id'],
+              'count' => 0
+            ]);
         }, TimeTable::get(['id'])->toArray());
     }
 }
