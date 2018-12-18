@@ -8,6 +8,8 @@
 
 namespace App\Services\Like;
 
+use App\Repositories\Like\LikeRepository;
+
 class LikeService
 {
     protected $repository;
