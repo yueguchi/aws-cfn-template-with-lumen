@@ -10,8 +10,15 @@ namespace App\Services\Like;
 
 class LikeService
 {
+    protected $repository;
+    
+    public function __construct(LikeRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+    
     public function change(string $uuid, int $count)
     {
-        return [$uuid, $count];
+        return $this->repository->update($uuid, $count);
     }
 }

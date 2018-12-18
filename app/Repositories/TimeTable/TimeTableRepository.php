@@ -16,5 +16,17 @@ namespace App\Repositories\TimeTable;
  */
 interface TimeTableRepository
 {
+    /**
+     * 指定したカラムで全件取得する
+     * @param array $columns
+     * @return mixed
+     */
     public function findAll(array $columns = []);
+    
+    /**
+     * uuidに紐づくidを取得する
+     * @param string $uuid
+     * @return mixed
+     */
+    public function findIdByUuid(string $uuid);
 }

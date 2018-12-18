@@ -26,7 +26,7 @@ class LikeController extends Controller
     }
     
     /**
-     * [POST] Like Increment
+     * [PATCH] Like Increment
      *
      * @param LikeRequest $request
      * @return mixed Array
@@ -34,17 +34,17 @@ class LikeController extends Controller
     public function increment(LikeRequest $request)
     {
         // TODO なぜかget('uuid') or input('uuid')で取得できない...
-        return $this->likeService->change($request->all()['uuid'], 1);
+        return response($this->likeService->change($request->all()['uuid'], 1), 200);
     }
     
     /**
-     * [POST] Like Decrement
+     * [PATCH] Like Decrement
      *
      * @param LikeRequest $request
      * @return mixed Array
      */
     public function decrement(LikeRequest $request)
     {
-        return $this->likeService->change($request->all()['uuid'], -1);
+        return response($this->likeService->change($request->all()['uuid'], -1), 200);
     }
 }

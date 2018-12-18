@@ -27,4 +27,15 @@ class TimeTableRepositoryImpl implements TimeTableRepository
     {
         return TimeTable::orderBy('start_at')->get($columns);
     }
+    
+    
+    /**
+     * uuidに紐づくidを取得する
+     * @param string $uuid
+     * @return mixed
+     */
+    public function findIdByUuid(string $uuid)
+    {
+        return TimeTable::where('uuid', '=', $uuid)->get(['id'])['id'];
+    }
 }
