@@ -44,7 +44,7 @@ class TimeTableService
         ]);
         $timeTablesArray = $timeTablesCollection->toArray();
         foreach ($timeTablesCollection as $index => $timeTable) {
-            $timeTablesArray[$index]->like_count = $timeTable->like->count;
+            $timeTablesArray[$index]['like_count'] = $timeTable->like->count;
         }
         return $timeTablesArray;
     }
