@@ -25,7 +25,7 @@ class TimeTableRepositoryImple implements TimeTableRepository
      */
     public function findAll(array $columns = [])
     {
-        return TimeTable::orderBy('start_at')->get($columns);
+        return TimeTable::with('like')->orderBy('start_at')->get($columns);
     }
     
     
