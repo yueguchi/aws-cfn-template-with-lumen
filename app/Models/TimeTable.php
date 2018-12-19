@@ -12,11 +12,20 @@ class TimeTable extends Model
     
     protected $table = 'timetables';
     protected $dates = ['deleted_at'];
-
+    
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = [ 'title', 'description', 'place', 'hash_tag', 'start_at', 'end_at' ];
+    protected $fillable = ['title', 'description', 'place', 'hash_tag', 'start_at', 'end_at'];
+    
+    /**
+     * 1:1
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function like()
+    {
+        return $this->hasOne('App\Models\Like');
+    }
 }
