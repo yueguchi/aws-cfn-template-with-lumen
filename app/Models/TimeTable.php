@@ -26,6 +26,6 @@ class TimeTable extends Model
      */
     public function like()
     {
-        return $this->hasOne('App\Models\Like');
+        return $this->hasOne('App\Models\Like', 'timetable_id', 'id');
     }
 }
