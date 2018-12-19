@@ -30,7 +30,7 @@ class TimeTableService
      */
     public function get()
     {
-        $timeTables = $this->repository->findAll([
+        $timeTablesCollection = $this->repository->findAll([
           'uuid',
           'speaker',
           'title',
@@ -42,9 +42,10 @@ class TimeTableService
           'end_at',
           'sponsor_id'
         ]);
-        foreach ($timeTables as $index => $timeTable) {
-            $timeTables[$index]->like_count = $timeTable->like->count;
+        $timeTablesArray = $timeTablesCollection->toArray();
+        foreach ($timeTablesCollection as $index => $timeTable) {
+            $timeTablesArray[$index]->like_count = $timeTable->like->count;
         }
-        return $timeTables;
+        return $timeTablesArray;
     }
 }
