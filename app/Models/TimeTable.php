@@ -20,6 +20,9 @@ class TimeTable extends Model
      */
     protected $fillable = ['title', 'description', 'place', 'hash_tag', 'start_at', 'end_at'];
     
+    /** hidden */
+    protected $hidden = ['id'];
+    
     /**
      * 1:1
      * @return \Illuminate\Database\Eloquent\Relations\HasOne

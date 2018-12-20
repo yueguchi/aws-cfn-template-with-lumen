@@ -18,7 +18,7 @@ use App\Models\TimeTable;
 class TimeTableRepositoryImple implements TimeTableRepository
 {
     /**
-     * 取得
+     * 取得 withなのでidの指定が必須
      *
      * @param array $columns
      * @return array

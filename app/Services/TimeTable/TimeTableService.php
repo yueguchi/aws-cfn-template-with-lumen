@@ -31,6 +31,7 @@ class TimeTableService
     public function get()
     {
         return $this->repository->findAll([
+          'id',
           'uuid',
           'speaker',
           'title',

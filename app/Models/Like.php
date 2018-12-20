@@ -18,4 +18,6 @@ class Like extends Model
      * @var array
      */
     protected $fillable = [ 'count' ];
+    
+    protected $visible = ['count'];
 }
