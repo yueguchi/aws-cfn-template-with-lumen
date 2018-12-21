@@ -13,11 +13,12 @@ class LikesTableSeeder extends Seeder
     public function run()
     {
         DB::table('likes')->delete();
-        array_map(function ($timeTable) {
+        $timeTables = TimeTable::get(['id']);
+        foreach ($timeTables as $timeTable) {
             DB::table('likes')->insert([
-              'timetable_id' => $timeTable['id'],
+              'timetable_id' => $timeTable->getAttribute('id'),
               'count' => 0
             ]);
-        }, TimeTable::get(['id'])->toArray());
+        }
     }
 }

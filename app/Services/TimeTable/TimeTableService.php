@@ -35,6 +35,7 @@ class TimeTableService
           'uuid',
           'speaker',
           'title',
+          'avatar',
           'description',
           'twitter',
           'place',

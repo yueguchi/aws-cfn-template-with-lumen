@@ -17,7 +17,7 @@ class CreateTimetablesTable extends Migration
             $table->increments('id');
             $table->string('uuid')->comment('フロント専用のUUID'); // フロント用の一意でランダムな文字列
             $table->string('title')->comment('タイトル');
-            $table->string('description')->comment('説明');
+            $table->longText('description')->comment('説明');
             $table->string('speaker')->comment('スピーカー');
             $table->string('twitter')->comment('Twitter account');
             $table->string('place')->nullable()->comment('場所');

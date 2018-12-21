@@ -34,6 +34,7 @@ EOT
                         ,
                       'speaker' => '前田 和人',
                       'twitter' => 'chiroruxxxx',
+                      'avatar' => '',
                       'place' => '3F会議室',
                       'hash_tag' => 'laraveljpcon3F',
                       'start_at' => '2019-02-16 10:30',
@@ -51,6 +52,7 @@ EOT
                         ,
                       'speaker' => 'k-kurikuri',
                       'twitter' => 'k_kurikuri2',
+                      'avatar' => '',
                       'place' => '4F会議室',
                       'hash_tag' => 'laraveljpcon4F',
                       'start_at' => '2019-02-16 11:00',
@@ -72,6 +74,7 @@ EOT
                         ,
                       'speaker' => 'ytake',
                       'twitter' => 'ex_takezawa',
+                      'avatar' => '',
                       'place' => '4F会議室',
                       'hash_tag' => 'laraveljpcon4F',
                       'start_at' => '2019-02-16 11:30',
@@ -104,6 +107,7 @@ EOT
                         ,
                       'speaker' => 'ytake',
                       'twitter' => 'ex_takezawa',
+                      'avatar' => '',
                       'place' => '3F会議室',
                       'hash_tag' => 'laraveljpcon',
                       'start_at' => '2019-02-16 10:00',
@@ -121,6 +125,7 @@ EOT
                         ,
                       'speaker' => 'test',
                       'twitter' => 'test',
+                      'avatar' => '',
                       'place' => '3F会議室',
                       'hash_tag' => 'laraveljpcon3F',
                       'start_at' => '2019-02-16 13:00',
@@ -138,10 +143,37 @@ EOT
                         ,
                       'speaker' => 'test',
                       'twitter' => 'test',
+                      'avatar' => '',
                       'place' => '4F会議室',
                       'hash_tag' => 'laraveljpcon4F',
                       'start_at' => '2019-02-16 13:00',
                       'end_at' => '2019-02-16 13:30',
+                      'sponsor_id' => $s['id']
+                    ]);
+                    // LT
+                    array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
+                      'title' => 'LT大会',
+                      'description' => <<< 'EOT'
+柴山健吾 Lighthouseを使って認証必須のGraphQL APIを開発する
+maki Laravel Zeroで楽して情報収集する？
+Kazuya Takei 今だからこそ作る、Laravel上で動くアクセスカウンター
+k-kurikuri  LaravelSparkでサービス開発に注力する
+平田智子 Laravel Telescopeにアプリのモニタリングをお任せしてみた
+加納悠史 電撃：Laravel API クイズ
+株式会社Nextat 西澤裕也 Laravelの公式には載っていないBuilderの使い方
+ヤマシタ 未経験者研修で社内研修用システムをざっくり作った話
+ハトヨウコ LaravelとVue.jsに出会った私がレガシーな管理サイトを半SPAにするまでの歩み
+bmf_san Laravelで始めるテスト生活
+EOT
+                        ,
+                      'speaker' => '',
+                      'twitter' => '',
+                      'avatar' => '',
+                      'place' => '3F会議室',
+                      'hash_tag' => 'laraveljpcon3F',
+                      'start_at' => '2019-02-16 16:15',
+                      'end_at' => '2019-02-16 17:15',
                       'sponsor_id' => $s['id']
                     ]);
                     break;
