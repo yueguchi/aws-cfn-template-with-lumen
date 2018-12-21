@@ -59,6 +59,21 @@ aws-cfn-template-with-lumen.templateをCFNに流し込むだけです。
 #vendor/bin/phpmd . text phpmd.xml --suffixes php --exclude resources,storage,vendor
 ```
 
+### local mac mysqlメモ
+
+```
+mysqld_safe --skip-grant-tables &
+(enter)
+
+my.cnf(mysql --help | grep my.cnfであたりつける)
+mt.cnfに以下を記述
+skip-grant-tables
+default_authentication_plugin= mysql_native_password
+
+何かわからないが、root passwordを設定できず、けどno passwordで入るには、これをやらないと。。
+dockerにしとけばよかった。。
+```
+
 ## License
 
 under the [MIT license](http://opensource.org/licenses/MIT)
