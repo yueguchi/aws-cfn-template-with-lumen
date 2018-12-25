@@ -162,8 +162,8 @@ EOT
                       'avatar' => '',
                       'place' => '4F会議室',
                       'hash_tag' => 'laraveljpcon4F',
-                      'start_at' => '2018-12-25 14:30',
-                      'end_at' => '2018-12-25 15:00',
+                      'start_at' => '2018-12-25 15:30',
+                      'end_at' => '2018-12-25 16:00',
                       'sponsor_id' => $s['id']
                     ]);
                     array_push($inserts, [
@@ -178,8 +178,8 @@ EOT
                       'avatar' => '',
                       'place' => '4F会議室',
                       'hash_tag' => 'laraveljpcon4F',
-                      'start_at' => '2018-12-25 15:00',
-                      'end_at' => '2018-12-25 15:30',
+                      'start_at' => '2018-12-25 16:00',
+                      'end_at' => '2018-12-25 16:30',
                       'sponsor_id' => $s['id']
                     ]);
                     // LT
