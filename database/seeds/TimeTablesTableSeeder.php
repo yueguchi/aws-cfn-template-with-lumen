@@ -150,6 +150,38 @@ EOT
                       'end_at' => '2019-02-16 13:30',
                       'sponsor_id' => $s['id']
                     ]);
+                    array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
+                      'title' => 'test',
+                      'description' => <<< 'EOT'
+LocalPushのスケジューリングテスト1
+EOT
+                        ,
+                      'speaker' => 'test-push',
+                      'twitter' => 'test',
+                      'avatar' => '',
+                      'place' => '4F会議室',
+                      'hash_tag' => 'laraveljpcon4F',
+                      'start_at' => '2018-12-25 14:30',
+                      'end_at' => '2018-12-25 15:00',
+                      'sponsor_id' => $s['id']
+                    ]);
+                    array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
+                      'title' => 'test',
+                      'description' => <<< 'EOT'
+LocalPushのスケジューリングテスト2
+EOT
+                        ,
+                      'speaker' => 'test-push',
+                      'twitter' => 'test',
+                      'avatar' => '',
+                      'place' => '4F会議室',
+                      'hash_tag' => 'laraveljpcon4F',
+                      'start_at' => '2018-12-25 15:00',
+                      'end_at' => '2018-12-25 15:30',
+                      'sponsor_id' => $s['id']
+                    ]);
                     // LT
                     array_push($inserts, [
                       'uuid' => Uuid::generate()->string,
