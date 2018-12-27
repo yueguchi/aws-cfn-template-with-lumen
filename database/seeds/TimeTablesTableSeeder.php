@@ -98,7 +98,7 @@ EOT
                 case 'Etc':
                     array_push($inserts, [
                       'uuid' => Uuid::generate()->string,
-                      'title' => 'オープニング',
+                      'title' => 'Opening Talk',
                       'description' => <<< 'EOT'
 Laravel JP Conferenceは PHPのフレームワークであるLaravelをメインテーマとした技術カンファレンスです。「Laravel JP」を冠したイベントとしては日本初開催となります。
 
@@ -350,7 +350,7 @@ EOT
                     ]);
                     array_push($inserts, [
                       'uuid' => Uuid::generate()->string,
-                      'title' => 'Closing Tall',
+                      'title' => 'Closing Talk',
                       'description' => <<< 'EOT'
 閉会の言葉
 EOT
