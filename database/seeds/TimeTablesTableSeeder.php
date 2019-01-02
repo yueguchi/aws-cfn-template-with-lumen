@@ -327,16 +327,16 @@ EOT
                       'uuid' => Uuid::generate()->string,
                       'title' => 'LT大会',
                       'description' => <<< 'EOT'
-柴山健吾 Lighthouseを使って認証必須のGraphQL APIを開発する
-maki Laravel Zeroで楽して情報収集する？
-Kazuya Takei 今だからこそ作る、Laravel上で動くアクセスカウンター
-k-kurikuri  LaravelSparkでサービス開発に注力する
-平田智子 Laravel Telescopeにアプリのモニタリングをお任せしてみた
-加納悠史 電撃：Laravel API クイズ
-株式会社Nextat 西澤裕也 Laravelの公式には載っていないBuilderの使い方
-ヤマシタ 未経験者研修で社内研修用システムをざっくり作った話
-ハトヨウコ LaravelとVue.jsに出会った私がレガシーな管理サイトを半SPAにするまでの歩み
-bmf_san Laravelで始めるテスト生活
+【Kazuya Takei】 今だからこそ作る、Laravel上で動くアクセスカウンター
+【ヤマシタ】 未経験者研修で社内研修用システムをざっくり作った話
+【ハトヨウコ】 LaravelとVue.jsに出会った私がレガシーな管理サイトを半SPAにするまでの歩み
+【平田智子】 Laravel Telescopeにアプリのモニタリングをお任せしてみた
+【maki】 Laravel Zeroで楽して情報収集する？
+【柴山健吾】 Lighthouseを使って認証必須のGraphQL APIを開発する
+【bmf_san】 Laravelで始めるテスト生活
+【西澤裕也】 Laravelの公式には載っていないBuilderの使い方
+【k-kurikuri】  LaravelSparkでサービス開発に注力する
+【加納悠史】 電撃：Laravel API クイズ
 EOT
                         ,
                       'speaker' => '',
