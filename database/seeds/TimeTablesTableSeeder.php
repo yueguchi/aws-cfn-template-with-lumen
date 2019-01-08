@@ -58,6 +58,23 @@ EOT
                       'end_at' => '2019-02-16 14:20',
                       'sponsor_id' => $s['id']
                     ]);
+                    array_push($inserts, [
+                      'uuid' => Uuid::generate()->string,
+                      'title' => 'SimpleとEasyは違う',
+                      'description' => <<< 'EOT'
+「使い始めるのが簡単 (Easy)」と「開発が進めやすい (Simple)」は別物だという話。
+laravel-mixやVueを使って感じたこと。
+EOT
+                        ,
+                      'speaker' => '廣瀬健',
+                      'twitter' => '',
+                      'avatar' => '',
+                      'place' => '4F',
+                      'hash_tag' => 'laraveljpcon4F',
+                      'start_at' => '2019-02-16 11:20',
+                      'end_at' => '2019-02-16 11:50',
+                      'sponsor_id' => $s['id']
+                    ]);
 
                     break;
                 case 'Silver':
