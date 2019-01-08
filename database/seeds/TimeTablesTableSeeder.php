@@ -15,7 +15,6 @@ class TimeTablesTableSeeder extends Seeder
     {
         DB::table('timetables')->delete();
         // gradeの値のみを抽出
-        // TODO 採択されたら、精査して正確なデータを入れる
         $inserts = [];
         array_map(function ($s) use (&$inserts) {
             switch ($s['grade']) {
@@ -29,8 +28,8 @@ SCOUTERでLaravelでのAPI開発を高速にするためにやっていること
 EOT
                         ,
                       'speaker' => '松本 宏太',
-                      'twitter' => '',
-                      'avatar' => '',
+                      'twitter' => 'kotamats',
+                      'avatar' => 'https://pbs.twimg.com/profile_images/944473346757890048/JobIlP80_400x400.jpg',
                       'place' => '3F',
                       'hash_tag' => 'laraveljpcon3F',
                       'start_at' => '2019-02-16 13:00',
@@ -51,8 +50,8 @@ GameWithの新サービスは、開発当初はLumenで開発をしていまし�
 EOT
                         ,
                       'speaker' => '田口 航',
-                      'twitter' => '',
-                      'avatar' => '',
+                      'twitter' => 'tiwu_official',
+                      'avatar' => 'https://pbs.twimg.com/profile_images/1057538374838321152/bCTfFcEr_400x400.jpg',
                       'place' => '4F',
                       'hash_tag' => 'laraveljpcon4F',
                       'start_at' => '2019-02-16 13:50',
@@ -192,7 +191,7 @@ Laravelに限らず、データの本質と向き合い、より良い設計と�
 今回はそんなRDBMSのパフォーマンスチューニングについてお話します。
 EOT
                         ,
-                      'speaker' => 'そーだい',
+                      'speaker' => '曽根 壮大',
                       'twitter' => 'soudai1025',
                       'avatar' => 'https://pbs.twimg.com/profile_images/2825277737/b1a1a8ab4065e76afc31f17695db1ac2_400x400.png',
                       'place' => '4F',
