@@ -27,7 +27,7 @@ SCOUTERでLaravelでのAPI開発を高速にするためにやっていること
 パッケージ開発や自作OSSをもちいた開発など、開発フローの効率化をお話させていただきます。
 EOT
                         ,
-                      'speaker' => '松本 宏太',
+                      'speaker' => '株式会社SCOUTER 松本 宏太',
                       'twitter' => 'kotamats',
                       'avatar' => 'https://pbs.twimg.com/profile_images/944473346757890048/JobIlP80_400x400.jpg',
                       'place' => '3F',
@@ -49,7 +49,7 @@ GameWithの新サービスは、開発当初はLumenで開発をしていまし�
 本セッションではLumenでの開発、Laravelへの移行した事例を紹介します。
 EOT
                         ,
-                      'speaker' => '田口 航',
+                      'speaker' => '株式会社GameWith 田口 航',
                       'twitter' => 'tiwu_official',
                       'avatar' => 'https://pbs.twimg.com/profile_images/1057538374838321152/bCTfFcEr_400x400.jpg',
                       'place' => '4F',
@@ -66,9 +66,9 @@ EOT
 laravel-mixやVueを使って感じたこと。
 EOT
                         ,
-                      'speaker' => '廣瀬健',
-                      'twitter' => '',
-                      'avatar' => '',
+                      'speaker' => '株式会社クラシコム 廣瀬健（ヒロセタケル）',
+                      'twitter' => 'takeru0757',
+                      'avatar' => 'https://pbs.twimg.com/profile_images/684412923444248577/ATvgcpzI_400x400.jpg',
                       'place' => '4F',
                       'hash_tag' => 'laraveljpcon4F',
                       'start_at' => '2019-02-16 11:20',
@@ -91,7 +91,7 @@ EOT
 現場にいる新卒の目を通じて、その光と闇について。
 EOT
                         ,
-                      'speaker' => 'ブライソン イアン',
+                      'speaker' => '株式会社デザインワン・ジャパン ブライソン イアン',
                       'twitter' => '',
                       'avatar' => '',
                       'place' => '3F',
