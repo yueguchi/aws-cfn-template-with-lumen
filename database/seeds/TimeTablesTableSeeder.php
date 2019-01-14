@@ -92,8 +92,8 @@ EOT
 EOT
                         ,
                       'speaker' => '株式会社デザインワン・ジャパン ブライソン イアン',
-                      'twitter' => '',
-                      'avatar' => '',
+                      'twitter' => 'brison_ian',
+                      'avatar' => 'https://user-images.githubusercontent.com/558934/51103059-b836d000-1824-11e9-9d41-dade9fb83f32.jpg',
                       'place' => '3F',
                       'hash_tag' => 'laraveljpcon3F',
                       'start_at' => '2019-02-16 12:10',
